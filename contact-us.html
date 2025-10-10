@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Kambeke SDA Church</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa url('bible-logo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      text-align: center;
+      background: rgba(0, 51, 102, 0.9);
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .navbar {
+      background-color: #003366;
+      padding: 10px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin: 5px 15px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .navbar a:hover, .navbar a.active {
+      background-color: #0055a4;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-info div {
+      flex: 1 1 250px;
+      margin: 15px;
+    }
+
+    .contact-info i {
+      font-size: 28px;
+      color: #0055a4;
+      margin-bottom: 10px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: #0055a4;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background-color: #003366;
+    }
+
+    .map {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    iframe {
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      height: 350px;
+    }
+
+    .footer {
+      text-align: center;
+      background-color: #003366;
+      color: #fff;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>KAMBEKE SDA CHURCH</h1>
+    <p>"A Place of Hope, Faith, and Community"</p>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bible-version.html">Bible Version</a></li>
+      <li><a href="lesson.html">Lesson</a></li>
+      <li><a href="youth-ministry.html">Youth Ministry</a></li>
+      <li><a href="children-ministry.html">Children Ministry</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact-us.html" class="active">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Contact Us</h2>
+
+    <div class="contact-info">
+      <div>
+        <i>📍</i>
+        <h4>Our Location</h4>
+        <p>Kambeke, Homabay, Kenya</p>
+      </div>
+      <div>
+        <i>📞</i>
+        <h4>Phone</h4>
+        <p>+254 712 345 678</p>
+      </div>
+      <div>
+        <i>✉️</i>
+        <h4>Email</h4>
+        <p>info@kambekesdachurch.org</p>
+      </div>
+    </div>
+
+    <section class="contact-form">
+      <h3 style="text-align:center; color:#003366;">Send Us a Message</h3>
+      <form action="mailto:info@kambekesdachurch.org" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email Address" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+    <div class="map">
+      <h3>Find Us Here</h3>
+      <iframe 
+        src="https://www.google.com/maps?q=Kambeke,+Nairobi,+Kenya&output=embed"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Kambeke SDA Church | Homabay, Kenya</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kambeke SDA Church | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- Background --- */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color:blue;
+      background: url("image.jpg") no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: brightness(0.4);
+    }
+
+    /* --- Overlay for readability --- */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: -1;
+    }
+
+    /* --- Header --- */
+    .header {
+      text-align: center;
+      padding: 30px 10px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .header h1 {
+      font-size: 2.5em;
+      color: #FFD700;
+      margin-bottom: 5px;
+    }
+    .header p {
+      font-style: italic;
+      margin: 4px 0;
+    }
+
+    /* --- Navbar --- */
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(5px);
+    }
+    .navbar li {
+      margin: 0 10px;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 18px;
+      display: block;
+      transition: background 0.3s;
+    }
+    .navbar a:hover, .navbar a.active {
+      background: #FFD700;
+      color: #000;
+      border-radius: 5px;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      margin: 20px auto;
+      width: 85%;
+    }
+    .hero h2 {
+      font-size: 2em;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .hero-btn {
+      background: #FFD700;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .hero-btn:hover {
+      background: #fff;
+    }
+
+    /* --- Content Sections --- */
+    main {
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.5);
+      margin: 20px auto;
+      width: 85%;
+      border-radius: 10px;
+    }
+    .content-section h3 {
+      color: #FFD700;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 5px 0;
+    }
+
+    /* --- Footer --- */
+    .footer {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      color: #ddd;
+      font-size: 0.9em;
+      border-top: 2px solid #FFD700;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>KAMBEKE SDA CHURCH</h1>
+    <p>"Welcome and worship with us — we love you, we value you, and God bless you"</p>
+    <p>A Place of Hope, Faith, and Community</p>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="bible-version.html">Bible Version</a></li>
+      <li><a href="lesson.html">Lesson</a></li>
+      <li><a href="youth-ministry.html">Youth Ministry</a></li>
+      <li><a href="children-ministry.html">Children Ministry</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Welcome to Our Church Family</h2>
+    <p>Growing in faith and serving the community together.</p>
+    <a href="contact-us.html" class="hero-btn">Visit Us This Sabbath</a>
+  </section>
+
+  <main>
+    <section class="content-section">
+      <h3>Our Mission</h3>
+      <p>To spread the everlasting gospel of Jesus Christ and prepare the world for His soon return. We are committed to building a loving and faithful community in Kambeke.</p>
+    </section>
+
+    <section class="content-section">
+      <h3>Weekly Service Schedule</h3>
+      <ul>
+        <li><strong>Sabbath School:</strong> Saturday, 9:30 AM</li>
+        <li><strong>Divine Service:</strong> Saturday, 11:00 AM</li>
+        <li><strong>Youth Program (AY):</strong> Saturday, 4:00 PM</li>
+        <li><strong>Mid-week Prayer Meeting:</strong> Wednesday, 7:00 PM</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Kambeke SDA Church | Nairobi, Kenya</p>
+  </footer>
+</body>
+</html>

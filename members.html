@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members | Kambeke SDA Church</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      color: #222;
+    }
+
+    .header {
+      background: linear-gradient(90deg, #00264d, #004080);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .navbar {
+      background: #003366;
+      padding: 10px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin: 5px 15px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .navbar a:hover, .navbar a.active {
+      background: #0055a4;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.96);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2, h3 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+      text-align: justify;
+      font-size: 1rem;
+    }
+
+    .members-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .member-card {
+      background: #f9fbff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .member-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .member-card img {
+      width: 100%;
+      height: 220px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .member-card h4 {
+      color: #003366;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .member-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    .departments {
+      margin-top: 50px;
+    }
+
+    .departments ul {
+      list-style-type: square;
+      padding-left: 40px;
+      line-height: 1.8;
+    }
+
+    .join-section {
+      background: #f0f6fc;
+      border-radius: 8px;
+      padding: 30px;
+      margin-top: 50px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .footer {
+      text-align: center;
+      background: #003366;
+      color: #fff;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .members-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>KAMBEKE SDA CHURCH</h1>
+    <p>"A Place of Hope, Faith, and Community"</p>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bible-version.html">Bible Version</a></li>
+      <li><a href="lesson.html">Lesson</a></li>
+      <li><a href="youth-ministry.html">Youth Ministry</a></li>
+      <li><a href="children-ministry.html">Children Ministry</a></li>
+      <li><a href="members.html" class="active">Members</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Our Members</h2>
+      <p>The strength of Kambeke Seventh-day Adventist Church lies in its members — men, women, and youth united in faith, prayer, and service. Every member contributes to the growth of the church through their gifts, time, and dedication to God’s mission.</p>
+    </section>
+
+    <section class="members-grid">
+      <div class="member-card">
+        <img src="https://via.placeholder.com/250x220?text=John+Omondi" alt="Member">
+        <h4>John Omondi</h4>
+        <p>Head Deacon</p>
+      </div>
+
+      <div class="member-card">
+        <img src="https://via.placeholder.com/250x220?text=Mary+Atieno" alt="Member">
+        <h4>Mary Atieno</h4>
+        <p>Women’s Ministry Leader</p>
+      </div>
+
+      <div class="member-card">
+        <img src="https://via.placeholder.com/250x220?text=Peter+Ochieng" alt="Member">
+        <h4>Peter Ochieng</h4>
+        <p>Youth Leader</p>
+      </div>
+
+      <div class="member-card">
+        <img src="https://via.placeholder.com/250x220?text=Grace+Awuor" alt="Member">
+        <h4>Grace Awuor</h4>
+        <p>Children’s Ministry Coordinator</p>
+      </div>
+    </section>
+
+    <section class="departments">
+      <h3>Church Departments</h3>
+      <p>Kambeke SDA Church operates through various departments, each focusing on specific areas of ministry and service:</p>
+      <ul>
+        <li><strong>Personal Ministries</strong> – Leads in evangelism and outreach.</li>
+        <li><strong>Sabbath School</strong> – Promotes Bible study and fellowship.</li>
+        <li><strong>AY (Adventist Youth Ministry)</strong> – Nurtures spiritual growth among the youth.</li>
+        <li><strong>Women’s Ministries</strong> – Empowers and supports women in faith and service.</li>
+        <li><strong>Children’s Ministries</strong> – Guides children in understanding God’s Word.</li>
+        <li><strong>Music Ministry</strong> – Enhances worship through praise and music.</li>
+        <li><strong>Deacons and Deaconesses</strong> – Assist in church operations and care for members.</li>
+        <li><strong>Health Ministry</strong> – Promotes holistic wellness and lifestyle education.</li>
+        <li><strong>Communication Department</strong> – Manages church media, announcements, and publicity.</li>
+      </ul>
+    </section>
+
+    <section class="join-section">
+      <h3>Becoming a Member</h3>
+      <p>Membership in the Seventh-day Adventist Church is open to all who accept Jesus Christ as their Savior, believe in the fundamental teachings of the Bible, and wish to live according to His will. You can join Kambeke SDA Church through:</p>
+      <ul>
+        <li><strong>Baptism</strong> – For those newly accepting the faith.</li>
+        <li><strong>Profession of Faith</strong> – For Christians transferring from another denomination.</li>
+        <li><strong>Letter of Transfer</strong> – For existing SDA members relocating to Kambeke.</li>
+      </ul>
+      <p>If you’re interested in joining or learning more, please visit our church office on Sabbath or contact the church clerk for assistance.</p>
+    </section>
+
+    <section>
+      <h3>Membership Benefits</h3>
+      <ul>
+        <li>Spiritual growth through worship, Bible study, and prayer.</li>
+        <li>Fellowship and support from a caring Christian community.</li>
+        <li>Opportunities to serve God through church ministries.</li>
+        <li>Access to Adventist education, programs, and global events.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Kambeke SDA Church | Homabay, Kenya</p>
+  </footer>
+</body>
+</html>

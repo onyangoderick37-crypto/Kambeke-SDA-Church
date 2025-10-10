@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Version | Kambeke SDA Church</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .bible-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .bible-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .bible-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .bible-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .bible-card h4 {
+      color: #003366;
+      margin-top: 10px;
+    }
+
+    .bible-card p {
+      font-size: 0.95rem;
+      margin: 10px 0;
+    }
+
+    .bible-card a {
+      display: inline-block;
+      background-color: #0055a4;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .bible-card a:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>KAMBEKE SDA CHURCH</h1>
+    <p>A Place of Hope, Faith, and Community</p>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bible-version.html" class="active">Bible Version</a></li>
+      <li><a href="lesson.html">Lesson</a></li>
+      <li><a href="youth-ministry.html">Youth Ministry</a></li>
+      <li><a href="children-ministry.html">Children Ministry</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="content-section">
+      <h3>Bible Versions</h3>
+      <p>“Thy word is a lamp unto my feet, and a light unto my path.” (Psalm 119:105)</p>
+      <p>Explore different Bible versions to deepen your understanding of God's Word.</p>
+    </section>
+
+    <section class="bible-grid">
+
+      <!-- Good News Bible -->
+      <div class="bible-card">
+        <img src="Good News.jpg" alt="Good News Bible">
+        <h4>Good News Bible (GNB)</h4>
+        <p>Simple and clear language for easy reading and sharing the Gospel with everyone.</p>
+        <a href="https://www.bible.com/bible/68/MAT.1.GNT" target="_blank">Read Good News</a>
+      </div>
+
+      <!-- Muma Maler (Dholuo Bible) -->
+      <div class="bible-card">
+        <img src="Muma Maler.jpg" alt="Muma Maler Bible">
+        <h4>Muma Maler (Dholuo Bible)</h4>
+        <p>The Word of God in Dholuo — bringing Scripture closer to the hearts of Luo speakers.</p>
+        <a href="https://www.bible.com/versions/88-DLUO-MUMA-MALER" target="_blank">Read Muma Maler</a>
+      </div>
+
+      <!-- New King James Version -->
+      <div class="bible-card">
+        <img src="NKJV.jpg" alt="NKJV Bible">
+        <h4>New King James Version (NKJV)</h4>
+        <p>Faithful to the original KJV while using modern English for clarity and understanding.</p>
+        <a href="https://www.bible.com/bible/114/MAT.1.NKJV" target="_blank">Read NKJV</a>
+      </div>
+
+      <!-- King James Version -->
+      <div class="bible-card">
+        <img src="KJV.jpg" alt="KJV Bible">
+        <h4>King James Version (KJV)</h4>
+        <p>The timeless and classic version loved by millions for its poetic and powerful style.</p>
+        <a href="https://www.bible.com/bible/1/MAT.1.KJV" target="_blank">Read KJV</a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Kambeke SDA Church | Nairobi, Kenya</p>
+  </footer>
+</body>
+</html>

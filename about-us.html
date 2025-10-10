@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Kambeke SDA Church</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      margin: 0;
+    }
+
+    .header {
+      text-align: center;
+      background: #003366;
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    .navbar {
+      background-color: #004080;
+      padding: 10px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin: 5px 15px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .navbar a:hover, .navbar a.active {
+      background-color: #0055a4;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2, h3 {
+      color: #003366;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .mission-vision {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .mission-vision div {
+      flex: 1 1 45%;
+      background: #f0f6fc;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .beliefs {
+      margin-top: 40px;
+    }
+
+    .beliefs ol {
+      line-height: 1.8;
+      padding-left: 30px;
+    }
+
+    .beliefs h4 {
+      color: #003366;
+      margin-top: 20px;
+    }
+
+    .leaders {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .leader-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .leader {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 260px;
+      padding: 15px;
+      transition: transform 0.3s;
+    }
+
+    .leader:hover {
+      transform: translateY(-5px);
+    }
+
+    .leader img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .leader h4 {
+      color: #003366;
+      margin: 10px 0 5px;
+    }
+
+    .footer {
+      text-align: center;
+      background-color: #003366;
+      color: #fff;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .mission-vision {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>KAMBEKE SDA CHURCH</h1>
+    <p>"A Place of Hope, Faith, and Community"</p>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bible-version.html">Bible Version</a></li>
+      <li><a href="lesson.html">Lesson</a></li>
+      <li><a href="youth-ministry.html">Youth Ministry</a></li>
+      <li><a href="children-ministry.html">Children Ministry</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="about-us.html" class="active">About Us</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>About Kambeke SDA Church</h2>
+      <p>Kambeke Seventh-day Adventist Church is a Christ-centered family of believers located in Kambeke Village, Homa Bay County, Kenya. We are part of the global Seventh-day Adventist Church, a Protestant Christian denomination founded on the teachings of the Bible and the hope of Jesus Christ’s soon return. Our goal is to worship God in truth and spirit, nurture spiritual growth, and reach our community with the love of Christ.</p>
+    </section>
+
+    <section class="mission-vision">
+      <div>
+        <h3>Our Mission</h3>
+        <p>To call all people to become disciples of Jesus Christ, to proclaim the everlasting gospel embraced by the Three Angels’ Messages (Revelation 14:6–12), and to prepare the world for Christ’s soon return.</p>
+      </div>
+      <div>
+        <h3>Our Vision</h3>
+        <p>To be a Spirit-filled, Christ-centered, and mission-driven church where every member reflects God’s character through service, worship, and love for humanity.</p>
+      </div>
+    </section>
+
+    <section>
+      <h3>Our History</h3>
+      <p>Kambeke SDA Church was established in the early 2000s by a small group of dedicated believers who met regularly for Sabbath worship and Bible study. Through God’s blessings, the church has grown to become a beacon of faith, fostering strong families and nurturing the youth through spiritual programs, education, and community outreach.</p>
+    </section>
+
+    <section class="beliefs">
+      <h3>Our 28 Fundamental Beliefs</h3>
+      <p>We uphold 28 Bible-based fundamental beliefs that summarize our faith and guide our daily Christian living:</p>
+
+      <ol>
+        <li><b>The Holy Scriptures</b> – The inspired Word of God, the ultimate authority for faith and life.</li>
+        <li><b>The Trinity</b> – One God: Father, Son, and Holy Spirit, a unity of three co-eternal Persons.</li>
+        <li><b>The Father</b> – Creator, Sustainer, and Source of all life, love, and goodness.</li>
+        <li><b>The Son</b> – Jesus Christ, fully God and fully man, our Savior and Mediator.</li>
+        <li><b>The Holy Spirit</b> – God’s active presence in the world, guiding, comforting, and empowering believers.</li>
+        <li><b>Creation</b> – God created the world in six days and rested on the seventh day as a memorial of His creative power.</li>
+        <li><b>The Nature of Humanity</b> – Humanity was created in God’s image but fell into sin; redemption is found in Christ.</li>
+        <li><b>The Great Controversy</b> – The conflict between Christ and Satan over God’s character and law.</li>
+        <li><b>The Life, Death, and Resurrection of Christ</b> – Jesus’ perfect life, sacrificial death, and resurrection provide salvation for all who believe.</li>
+        <li><b>The Experience of Salvation</b> – Salvation is by grace through faith in Jesus Christ alone.</li>
+        <li><b>Growing in Christ</b> – Believers grow in grace through prayer, Bible study, and obedience to God’s will.</li>
+        <li><b>The Church</b> – The community of believers who confess Jesus Christ as Lord and Savior.</li>
+        <li><b>The Remnant and Its Mission</b> – God’s people called to proclaim the everlasting gospel and the soon return of Christ.</li>
+        <li><b>Unity in the Body of Christ</b> – All believers are one in Christ, regardless of race, gender, or nationality.</li>
+        <li><b>Baptism</b> – A public declaration of faith, symbolizing death to sin and new life in Christ.</li>
+        <li><b>The Lord’s Supper</b> – A memorial of Christ’s sacrifice and a symbol of fellowship among believers.</li>
+        <li><b>Spiritual Gifts and Ministries</b> – The Holy Spirit gives gifts for service and the building of the church.</li>
+        <li><b>The Gift of Prophecy</b> – A distinguishing mark of the remnant church, manifested in the ministry of Ellen G. White.</li>
+        <li><b>The Law of God</b> – The Ten Commandments express God’s will and guide Christian living.</li>
+        <li><b>The Sabbath</b> – The seventh day (Saturday) is a day of rest and worship instituted by God at creation.</li>
+        <li><b>Stewardship</b> – Managing God’s blessings—time, talents, finances, and environment—for His glory.</li>
+        <li><b>Christian Behavior</b> – Reflecting Christ in our thoughts, words, dress, health, and relationships.</li>
+        <li><b>Marriage and the Family</b> – A sacred union between one man and one woman, ordained by God.</li>
+        <li><b>Christ’s Ministry in the Heavenly Sanctuary</b> – Jesus intercedes for humanity in the heavenly sanctuary as our High Priest.</li>
+        <li><b>The Second Coming of Christ</b> – The visible, literal, and imminent return of Jesus Christ.</li>
+        <li><b>Death and Resurrection</b> – Death is a state of unconscious sleep until the resurrection at Christ’s return.</li>
+        <li><b>The Millennium and the End of Sin</b> – A thousand-year reign of Christ in heaven followed by the final destruction of sin.</li>
+        <li><b>The New Earth</b> – God will create a new, perfect world where righteousness dwells forever.</li>
+      </ol>
+      <p>For more information, visit the official SDA Church website at <a href="https://www.adventist.org/beliefs/" target="_blank">adventist.org/beliefs</a>.</p>
+    </section>
+
+    <section class="leaders">
+      <h3>Our Leadership Team</h3>
+      <div class="leader-cards">
+        <div class="leader">
+          <img src="https://via.placeholder.com/260x220?text=Church+Pastor" alt="Church Pastor">
+          <h4>Pr. George Odinya</h4>
+          <p>Church Pastor</p>
+        </div>
+        <div class="leader">
+          <img src="https://via.placeholder.com/260x220?text=Elder" alt="Head Elder">
+          <h4>Elder Kennedy Ogallo</h4>
+          <p>Church Elder</p>
+        </div>
+        <div class="leader">
+          <img src="https://via.placeholder.com/260x220?text=Treasurer" alt="Treasurer">
+          <h4>Elder Tobias Ochieng</h4>
+          <p>Church Treasurer</p>
+        </div>
+        <div class="leader">
+          <img src="https://via.placeholder.com/260x220?text=Church+Clerk" alt="Church Clerk">
+          <h4>Elder Hellen Atieno</h4>
+          <p>Church Clerk</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Kambeke SDA Church | Homa Bay, Kenya</p>
+    <p>Powered by Faith | Built with Love</p>
+  </footer>
+</body>
+</html>
