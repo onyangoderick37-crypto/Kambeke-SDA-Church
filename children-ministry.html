@@ -12,12 +12,13 @@
       --accent: #f4b400;
       --green: #0b6623;
       --card-bg: #ffffff;
+      --light-bg: #f5f7fa;
     }
 
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background: #f5f7fa;
+      background: var(--light-bg);
       color: #222;
       line-height: 1.6;
     }
@@ -28,105 +29,101 @@
       color: #fff;
       text-align: center;
     }
-
-    .header h1 { margin: 0 0 8px; font-size: 2.4rem; }
+    .header h1 { margin: 0 0 6px; font-size: 2.25rem; }
     .header p { margin: 0; opacity: 0.95; }
 
     .navbar {
       background: var(--brand-dark);
     }
     .navbar ul {
-      display:flex; list-style:none; margin:0; padding:8px;
-      justify-content:center; flex-wrap:wrap;
+      display:flex;
+      list-style:none;
+      margin:0;
+      padding:8px;
+      justify-content:center;
+      flex-wrap:wrap;
     }
     .navbar a {
-      color:#fff; padding:8px 14px; text-decoration:none; margin:4px 8px;
+      color:#fff;
+      padding:8px 12px;
+      text-decoration:none;
+      margin:4px 8px;
       border-radius:6px;
+      transition: background 0.3s ease;
     }
     .navbar a.active, .navbar a:hover { background: var(--brand-mid); }
 
     main { max-width:1100px; margin:28px auto; padding:0 16px; }
 
-    .section {
+    .card {
       background: var(--card-bg);
       border-radius:10px;
-      padding:22px 24px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-      margin-bottom: 28px;
+      padding:22px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+      margin-bottom: 25px;
+      transition: transform 0.2s;
     }
+    .card:hover { transform: translateY(-4px); }
 
-    h2, h3 { color: var(--brand-dark); margin-top: 0; text-align:center; }
-    h4 { color: var(--brand-mid); margin-top: 10px; }
-
-    ul, ol { padding-left: 20px; }
+    .card h3 { color: var(--brand-dark); margin-top:0; border-left:5px solid var(--brand-mid); padding-left:10px; }
+    .small { font-size:0.95rem; color:#444; }
 
     .song {
-      background:#f0f8ff;
-      border-left:6px solid var(--brand-mid);
-      padding:14px;
+      background: linear-gradient(90deg,#e6f2ff,#ffffff);
+      border-left:5px solid var(--brand-mid);
+      padding:15px;
       border-radius:8px;
-      font-style:italic;
+      margin: 10px 0;
+    }
+    .song h4 {
+      color: var(--brand-mid);
+      margin-bottom:6px;
+    }
+    .song pre {
+      background:#fff;
+      border-radius:6px;
+      padding:10px;
+      white-space:pre-line;
+      line-height:1.5;
+    }
+    .song em {
+      display:block;
+      margin-top:6px;
+      color:var(--green);
+      font-weight:600;
     }
 
-    .pledge-law table {
+    .classes-list dt {
+      font-weight:700;
+      color: var(--brand-mid);
+      margin-top:10px;
+    }
+    .classes-list dd { margin-left:0; margin-bottom:10px; }
+
+    table {
       width:100%;
       border-collapse:collapse;
-      margin-top: 12px;
+      margin-top:10px;
     }
-    .pledge-law th, .pledge-law td {
-      border-bottom:1px solid #ddd;
-      padding:8px 10px;
+    th, td {
+      border-bottom:1px solid #eee;
+      padding:8px;
       text-align:left;
+      vertical-align:top;
     }
-    .pledge-law th { width:30%; color:var(--brand-mid); }
+    th { color:var(--brand-mid); }
 
     .footer {
       text-align: center;
-      background: var(--green);
+      background-color: var(--green);
       color: #fff;
-      padding: 22px;
-      margin-top: 50px;
-    }
-    .footer a { color:#fff; text-decoration:underline; }
-
-    .emblem {
-      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      font-size: 0.95rem;
     }
 
-    .emblem img {
-      max-width: 250px;
-      width: 80%;
-      margin-bottom: 15px;
-    }
-
-    .symbol-list {
-      padding-left: 20px;
-      margin-top: 10px;
-    }
-    .symbol-list li {
-      margin-bottom: 12px;
-    }
-    .symbol-title {
-      color: var(--brand-mid);
-      font-weight: bold;
-    }
-
-    .class-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 16px;
-    }
-    .class-table th, .class-table td {
-      border-bottom: 1px solid #ddd;
-      padding: 10px 12px;
-      text-align: left;
-    }
-    .class-table th {
-      background: var(--brand-mid);
-      color: #fff;
-    }
-    .class-table tr:nth-child(even) {
-      background: #f0f8ff;
+    @media (max-width:600px) {
+      .song pre { font-size:0.9rem; }
     }
   </style>
 </head>
@@ -151,99 +148,130 @@
   </nav>
 
   <main>
-    <!-- Existing sections preserved -->
 
-    <!-- Pathfinder World Emblem (kept as-is) -->
-    <section class="section">
-      <h3>🌍 Pathfinder World Emblem and Its Meaning</h3>
-      <div class="emblem">
-        <img src="pathfinder.jpg" alt="Pathfinder World Emblem">
-      </div>
-      <p>The Pathfinder World Emblem is a symbolic representation of the ideals, mission, and faith of the Pathfinder Club worldwide. Each element has a deep spiritual meaning grounded in the Word of God.</p>
-      <ul class="symbol-list">
-        <li><span class="symbol-title">1. The Shield:</span> Represents faith and protection. Just as a shield protects a warrior, faith protects the believer. <em>“Above all, taking the shield of faith.” — Ephesians 6:16</em></li>
-        <li><span class="symbol-title">2. The Sword:</span> Represents the Word of God, our weapon against sin and falsehood. <em>“The sword of the Spirit, which is the Word of God.” — Ephesians 6:17</em></li>
-        <li><span class="symbol-title">3. The Red Background:</span> Symbolizes the blood of Jesus Christ, through which we have redemption. <em>“In Him we have redemption through His blood.” — Ephesians 1:7</em></li>
-        <li><span class="symbol-title">4. The Gold Border:</span> Represents excellence, purity, and high standards. <em>“I counsel you to buy from Me gold refined in the fire.” — Revelation 3:18</em></li>
-        <li><span class="symbol-title">5. The Blue Field:</span> Stands for loyalty and truth. Pathfinders are called to be loyal to God’s kingdom. <em>“Be faithful until death, and I will give you the crown of life.” — Revelation 2:10</em></li>
-        <li><span class="symbol-title">6. The Triangle Shape:</span> Represents the triune nature of God — Father, Son, and Holy Spirit — the foundation of our faith. <em>“Go therefore and make disciples... baptizing them in the name of the Father, and of the Son, and of the Holy Spirit.” — Matthew 28:19</em></li>
-        <li><span class="symbol-title">7. The White Outline:</span> Symbolizes righteousness and purity through Christ. <em>“Though your sins are like scarlet, they shall be as white as snow.” — Isaiah 1:18</em></li>
-      </ul>
-      <p>Together, these symbols remind every Pathfinder to be ready to defend their faith, live in purity, and serve under the banner of Jesus Christ, our soon-coming King.</p>
+    <!-- Ministry Overview -->
+    <section class="card">
+      <h3>Our Children Ministry</h3>
+      <p>We provide a safe, fun, and Christ-centered environment where children grow in faith, service, and joy. Our programs include Sabbath School, Adventurers, Pathfinders, and other exciting Bible-based activities designed to prepare children to be faithful citizens of heaven and good examples on earth.</p>
     </section>
 
-    <!-- ✅ NEW SECTION: Pathfinder Classes -->
-    <section class="section">
-      <h3>📘 Pathfinder Classes and Descriptions</h3>
-      <p>The Pathfinder Club offers a progressive series of classes designed to develop physical, mental, and spiritual growth in young people. Each class has specific objectives, honors, and service projects to prepare Pathfinders for leadership and lifelong discipleship.</p>
+    <!-- Songs Section -->
+    <section class="card">
+      <h3>🎵 Songs of Faith</h3>
 
-      <table class="class-table">
-        <tr>
-          <th>Class</th>
-          <th>Age</th>
-          <th>Color</th>
-          <th>Description</th>
-          <th>Bible Verse</th>
-        </tr>
-        <tr>
-          <td><strong>Friend</strong></td>
-          <td>10 years</td>
-          <td style="color:#1e90ff;">Blue</td>
-          <td>Introduces basic Christian values and outdoor skills. Focuses on friendship with Jesus and others.</td>
-          <td><em>John 15:14 – “You are My friends if you do whatever I command you.”</em></td>
-        </tr>
-        <tr>
-          <td><strong>Companion</strong></td>
-          <td>11 years</td>
-          <td style="color:#6b8e23;">Green</td>
-          <td>Encourages daily Bible study, personal devotion, and practical Christian living.</td>
-          <td><em>Proverbs 18:24 – “There is a friend who sticks closer than a brother.”</em></td>
-        </tr>
-        <tr>
-          <td><strong>Explorer</strong></td>
-          <td>12 years</td>
-          <td style="color:#ff8c00;">Orange</td>
-          <td>Develops responsibility and self-discipline through study, hiking, and community service.</td>
-          <td><em>Joshua 1:9 – “Be strong and courageous.”</em></td>
-        </tr>
-        <tr>
-          <td><strong>Ranger</strong></td>
-          <td>13 years</td>
-          <td style="color:#800000;">Maroon</td>
-          <td>Trains Pathfinders in leadership and practical life skills, promoting confidence in Christ.</td>
-          <td><em>Philippians 4:13 – “I can do all things through Christ.”</em></td>
-        </tr>
-        <tr>
-          <td><strong>Voyager</strong></td>
-          <td>14 years</td>
-          <td style="color:#9932cc;">Purple</td>
-          <td>Emphasizes mission work, witnessing, and global awareness of God’s calling.</td>
-          <td><em>Matthew 28:19 – “Go therefore and make disciples of all nations.”</em></td>
-        </tr>
-        <tr>
-          <td><strong>Guide</strong></td>
-          <td>15 years</td>
-          <td style="color:#ff0000;">Red</td>
-          <td>Prepares Pathfinders for leadership roles and community service through mentoring and teaching.</td>
-          <td><em>1 Timothy 4:12 – “Let no one despise your youth, but be an example to the believers.”</em></td>
-        </tr>
-        <tr>
-          <td><strong>Master Guide</strong></td>
-          <td>16+ years / Leaders</td>
-          <td style="color:#000000;">Black & Gold</td>
-          <td>The highest level of Pathfinder training, focusing on leadership, ministry, and mentoring future Pathfinders.</td>
-          <td><em>Mark 10:45 – “For even the Son of Man did not come to be served, but to serve.”</em></td>
-        </tr>
+      <div class="song">
+        <h4>Adventurer Song</h4>
+        <pre>
+We are Adventurers!
+At home, at school, at play;
+We are Adventurers!
+We’re learning every day
+To be honest, kind, and true;
+To be like Jesus through and through.
+We are Adventurers!
+        </pre>
+        <em>Theme Verse: “And Jesus increased in wisdom and stature, and in favour with God and man.” — Luke 2:52</em>
+      </div>
+
+      <div class="song">
+        <h4>Pathfinder Song</h4>
+        <pre>
+Oh, we are the Pathfinders strong,
+The servants of God are we!
+Faithful as we march along,
+In kindness, truth, and purity.
+A message to tell to the world,
+A truth that will set us free!
+King Jesus the Savior’s coming back
+For you, and me!
+        </pre>
+        <em>Theme Verse: “Remember now your Creator in the days of your youth.” — Ecclesiastes 12:1</em>
+      </div>
+
+      <div class="song">
+        <h4>Adventist Youth Song</h4>
+        <pre>
+Adventist Youth are we,
+From every land and sea;
+Together we pray, and work, and play
+In happy harmony.
+We have a faith to share
+With others everywhere;
+A message of love from God above
+To show the world we care.
+        </pre>
+        <em>Theme Verse: “Let no one despise your youth, but be an example to the believers.” — 1 Timothy 4:12</em>
+      </div>
+    </section>
+
+    <!-- Pathfinder Classes -->
+    <section class="card">
+      <h3>Pathfinder Classes & Descriptions</h3>
+      <dl class="classes-list">
+        <dt>Friend</dt>
+        <dd>For ages 10–11. Learn basic Christian living, simple nature honors, and friendship skills.</dd>
+
+        <dt>Companion</dt>
+        <dd>For ages 11–12. Emphasizes loyalty, cooperation, and developing faith through study.</dd>
+
+        <dt>Explorer</dt>
+        <dd>For ages 12–13. Focuses on exploration of God’s Word, nature, and personal responsibility.</dd>
+
+        <dt>Ranger</dt>
+        <dd>For ages 13–14. Promotes independence, courage, and leadership in faith and service.</dd>
+
+        <dt>Voyager</dt>
+        <dd>For ages 14–15. Encourages self-control, mission spirit, and community involvement.</dd>
+
+        <dt>Guide</dt>
+        <dd>For ages 15–16. Prepares youth to lead others, master advanced honors, and mentor younger Pathfinders.</dd>
+
+        <dt>Master Guide</dt>
+        <dd>The highest level of leadership training, preparing members for lifelong ministry and service.</dd>
+      </dl>
+    </section>
+
+    <!-- Pathfinder Pledge and Law -->
+    <section class="card">
+      <h3>Pathfinder Pledge & Law</h3>
+
+      <h4>Pledge:</h4>
+      <p>By the grace of God, I will be pure, kind, and true. I will keep the Pathfinder Law. I will be a servant of God and a friend to man.</p>
+
+      <h4>Law:</h4>
+      <ul>
+        <li><strong>Keep the Morning Watch</strong> — Seek God first each day (Matthew 6:33)</li>
+        <li><strong>Do my honest part</strong> — Be faithful and responsible (Ecclesiastes 9:10)</li>
+        <li><strong>Care for my body</strong> — Live a healthy lifestyle (1 Corinthians 6:19–20)</li>
+        <li><strong>Keep a level eye</strong> — Be honest and disciplined (Philippians 4:8)</li>
+        <li><strong>Be courteous and obedient</strong> — Respect others and God’s Word (Ephesians 6:1–2)</li>
+        <li><strong>Walk softly in the sanctuary</strong> — Respect God’s presence (Ecclesiastes 5:1)</li>
+        <li><strong>Keep a song in my heart</strong> — Stay joyful in all things (Philippians 4:4)</li>
+        <li><strong>Go on God’s errands</strong> — Serve and witness faithfully (Matthew 28:19–20)</li>
+      </ul>
+    </section>
+
+    <!-- Pathfinder Emblem -->
+    <section class="card">
+      <h3>Pathfinder World Emblem — Meaning & Biblical References</h3>
+      <p>The Pathfinder Emblem is rich with spiritual meaning, representing the mission and values of Pathfinders worldwide.</p>
+
+      <table>
+        <tr><th>Symbol</th><th>Meaning & Verse</th></tr>
+        <tr><td>Shield</td><td>Protection of faith and purity. <em>Psalm 28:7</em></td></tr>
+        <tr><td>Sword</td><td>The Word of God, our spiritual weapon. <em>Ephesians 6:17</em></td></tr>
+        <tr><td>Red Triangle</td><td>Represents the Trinity and Christ’s sacrifice. <em>Matthew 28:19</em></td></tr>
+        <tr><td>Blue Background</td><td>Symbolizes loyalty and faithfulness. <em>1 Corinthians 15:58</em></td></tr>
+        <tr><td>Gold Border</td><td>Stands for excellence and character. <em>1 Peter 1:7</em></td></tr>
       </table>
-
-      <p>Each Pathfinder class builds character, discipline, and faith — guiding young people toward a closer walk with Jesus Christ and preparing them for service to God and humanity.</p>
     </section>
 
   </main>
 
   <footer class="footer">
-    <p>&copy; 2025 Kambeke SDA Church — Children Ministry • Homabay, Kenya<br>
-    <small>“Train up a child in the way he should go.” — Proverbs 22:6</small></p>
+    <p>&copy; 2025 Kambeke SDA Church — Children Ministry • Homabay, Kenya</p>
   </footer>
+
 </body>
 </html>
+
