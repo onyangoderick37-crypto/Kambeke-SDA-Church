@@ -105,26 +105,36 @@ h2 {
 }
 
 /* ---------- 💬 CONTACT FORM ---------- */
+/* =========================================================
+   📬 CONTACT SECTION STYLES
+   For "Contact Us" page of Kambeke SDA Church
+   ========================================================= */
+
+/* ---------- 🏠 CONTAINER ---------- */
 .contact-section {
   max-width: 500px;
   margin: 40px auto;
   background: #f8f9fa;
   padding: 20px 25px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* ---------- 🏷️ HEADINGS & TEXT ---------- */
 .contact-section h2 {
   text-align: center;
   color: #0b2c5a;
+  margin-bottom: 10px;
 }
 
 .contact-section p {
   text-align: center;
   color: #333;
   margin-bottom: 20px;
+  font-size: 15px;
 }
 
+/* ---------- 📋 FORM STYLING ---------- */
 .contact-form .form-group {
   margin-bottom: 15px;
 }
@@ -136,6 +146,7 @@ h2 {
   color: #0b2c5a;
 }
 
+/* ---------- 🧾 INPUTS & TEXTAREA ---------- */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -144,6 +155,13 @@ h2 {
   border-radius: 6px;
   font-size: 15px;
   outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0b2c5a;
+  box-shadow: 0 0 4px rgba(11, 44, 90, 0.2);
 }
 
 .contact-form textarea {
@@ -151,6 +169,7 @@ h2 {
   height: 100px;
 }
 
+/* ---------- 📤 SUBMIT BUTTON ---------- */
 .btn-send {
   display: block;
   width: 100%;
@@ -161,33 +180,12 @@ h2 {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 15px;
   transition: background 0.3s;
 }
 
 .btn-send:hover {
   background: #123d7b;
-}
-
-/* ---------- 🗺️ MAP SECTION ---------- */
-.map {
-  margin-top: 40px;
-  text-align: center;
-}
-
-iframe {
-  border: none;
-  border-radius: 8px;
-  width: 100%;
-  height: 350px;
-}
-
-/* ---------- ⚓ FOOTER ---------- */
-.footer {
-  text-align: center;
-  background-color: #003366;
-  color: #fff;
-  padding: 15px;
-  margin-top: 40px;
 }
 
 /* ---------- 💫 POPUP & LOADER STYLES ---------- */
