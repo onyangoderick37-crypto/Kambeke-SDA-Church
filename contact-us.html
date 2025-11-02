@@ -105,87 +105,60 @@ h2 {
 }
 
 /* ---------- 💬 CONTACT FORM ---------- */
-/* =========================================================
-   📬 CONTACT SECTION STYLES
-   For "Contact Us" page of Kambeke SDA Church
-   ========================================================= */
-
-/* ---------- 🏠 CONTAINER ---------- */
-.contact-section {
-  max-width: 500px;
-  margin: 40px auto;
-  background: #f8f9fa;
-  padding: 20px 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-/* ---------- 🏷️ HEADINGS & TEXT ---------- */
-.contact-section h2 {
-  text-align: center;
-  color: #0b2c5a;
-  margin-bottom: 10px;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-section p {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 15px;
-}
-
-/* ---------- 📋 FORM STYLING ---------- */
-.contact-form .form-group {
+form input,
+form textarea {
   margin-bottom: 15px;
-}
-
-.contact-form label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #0b2c5a;
-}
-
-/* ---------- 🧾 INPUTS & TEXTAREA ---------- */
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 15px;
-  outline: none;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #0b2c5a;
-  box-shadow: 0 0 4px rgba(11, 44, 90, 0.2);
-}
-
-.contact-form textarea {
-  resize: none;
-  height: 100px;
-}
-
-/* ---------- 📤 SUBMIT BUTTON ---------- */
-.btn-send {
-  display: block;
-  width: 100%;
-  background: #0b2c5a;
-  color: #fff;
-  padding: 10px;
+form button {
+  background-color: #0055a4;
+  color: white;
+  padding: 12px;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
-  font-weight: bold;
-  font-size: 15px;
   transition: background 0.3s;
 }
 
-.btn-send:hover {
-  background: #123d7b;
+form button:hover {
+  background-color: #003366;
+}
+
+/* ---------- 🗺️ MAP SECTION ---------- */
+.map {
+  margin-top: 40px;
+  text-align: center;
+}
+
+iframe {
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 350px;
+}
+
+/* ---------- ⚓ FOOTER ---------- */
+.footer {
+  text-align: center;
+  background-color: #003366;
+  color: #fff;
+  padding: 15px;
+  margin-top: 40px;
 }
 
 /* ---------- 💫 POPUP & LOADER STYLES ---------- */
@@ -258,6 +231,7 @@ h2 {
     transform: scale(1);
   }
 }
+
 </style>
 </head>
 
